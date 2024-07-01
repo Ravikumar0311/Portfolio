@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+
+body{
+    background-color: #081b29;
+    color: #ededed;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #051129;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    animation: slideTop 1.5s ease backwards;
+}
+
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1.5s ease forwards; 
+}
+
+
+.navbar a:hover{
+    color: #0ef;
+    text-shadow: 0px  0px 7px;
+}
+
+.home{
+    position: relative;
+    justify-content: space-around;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 20px 0;
+}
+
+.home-content{
+    max-width: 600px;
+    animation: slideRight 1.5s ease forwards;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.home-content h1{
+    font-size: 52px;
+    color: #0ef;
+    text-shadow: 2px 2px 5px ;
+    font-weight: 700;
+    margin: -3px 0;
+    padding-bottom: 10px;
+}
+
+.home-content p{
+    font-size: 20px;
+}
+
+@keyframes slideRight {
+    0%{
+        transform:translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0%{
+        transform:translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.about{
+    display: block;
+    justify-content: center;
+    padding-left: 120px;
+    padding-right: 100px;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-text h2{
+    font-size: 60px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.about-text h2 span{
+    color: #0ef;
+}
+
+.btn-box{
+    display: inline-flex;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-shadow: 0 0 5px;
+    margin-bottom: 100px;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideRight 1.5s ease forwards;
+    animation-delay: 6s;
+}
+
+.btn-box:hover{
+    background: hsl(184, 98%, 40%);
+}
+
+.about-text h4{
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text p{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.sub-title{
+    font-size: 60px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sub-title span{
+    color: #0ef;
+}
+
+.container{
+    padding: 90px;
+}
+
+.container .heading1{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+.info{
+    font-size: 30px;
+}
+
+.bar{
+    padding-top: 50px;
+}
+
+.main-text span{
+    color: #0ef;
+}
+
+.main-text{
+    padding-top: 80px;
+    margin-top: 20px;
+}
+
+.main-text h2{
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.portfolio-content{
+    display: inline-flex;
+    padding-bottom: 100px;
+}
+
+.layer h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layer p{
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    padding-left: 250px;
+}
+
+.row img{
+    border-radius: 8px;
+    display: block;
+    transition: 1s;
+    margin-bottom: 10px;
+}
+
+.row:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+.resume{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    margin-bottom: 100px;
+}
+.resume span{
+    color: #0ef;
+}
+
+.resume a{
+    text-decoration: none;
+    background-color: hsl(184, 100%, 50%);
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.resume a:hover{
+    background-color: hsl(184, 100%, 40%);
+    color: #fff;
+}
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 3rem;
+    text-align: center;
+}
+
+.Contact span{
+    color: #0ef;
+}
+
+.Contact h2{
+    font-size: 60px;
+    padding-bottom:20px;
+    margin-bottom: 10px;
+
+}
+
+.contact-list{
+    text-align: left;
+    padding: 20px;
+    line-height: 1.8;
+    list-style-type: none;
+    font-size: 25px;
+}
+
+.contact-list li{
+    padding-bottom: 10px;
+}
+
+.contact-list i{
+    color: #0ef;
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+.contact-list a{
+    color: #fff;
+}
+.contact-list a:hover{
+    color: #0ef;
+}
+
+.footer-content{
+    margin: 100px;
+}
+
+.footer-text{
+    text-align: center;
+}
+
